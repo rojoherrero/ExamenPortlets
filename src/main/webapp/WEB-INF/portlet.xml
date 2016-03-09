@@ -32,6 +32,12 @@
 		<security-role-ref>
 			<role-name>user</role-name>
 		</security-role-ref>
+        <supported-processing-event>
+            <qname xmlns:x="http://evento.examen.enviar.portletB.com">x:Persona</qname>
+        </supported-processing-event>
+        <supported-processing-event>
+            <qname xmlns:x="http://evento.examen.enviar.portletC.com">x:Persona</qname>
+        </supported-processing-event>
         <supported-publishing-event>
             <qname xmlns:x="http://evento.examen.enviar.portletB.com">x:Persona</qname>
         </supported-publishing-event>
