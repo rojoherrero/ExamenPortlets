@@ -19,9 +19,12 @@
 <div><%=persona.getDireccion()%></div>
 <div><%=persona.getNumeroTelefono()%></div>
 <%
-	}
+	} else {
 %>
 
 <div>
 	<h2>No has introducido ningún dato</h2>
 </div>
+<%
+	}
+%>

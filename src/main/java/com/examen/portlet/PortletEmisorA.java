@@ -61,8 +61,8 @@ public class PortletEmisorA extends GenericPortlet {
 		String numTelefono = request.getParameter(NUM_TELEFONO);
 		
 		Persona persona = new Persona(nombre, direccion, numTelefono);
-		QName qname = new javax.xml.namespace.QName("http://evento.examen.enviar.portletB.com", "persona", "x");
 		
+		QName qname = new javax.xml.namespace.QName("http://evento.examen.enviar.portletB.com", "Persona", "x");
 		response.setEvent(qname, persona);
 	}
 	
@@ -74,7 +74,7 @@ public class PortletEmisorA extends GenericPortlet {
 		String numTelefono = request.getParameter(NUM_TELEFONO);
 		
 		Persona persona = new Persona(nombre, direccion, numTelefono);
-		QName qname = new javax.xml.namespace.QName("http://evento.examen.enviar.portletC.com", "persona", "x");
+		QName qname = new javax.xml.namespace.QName("http://evento.examen.enviar.portletC.com", "Persona", "x");
 		
 		response.setEvent(qname, persona);
 	}

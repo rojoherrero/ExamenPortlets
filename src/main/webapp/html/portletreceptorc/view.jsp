@@ -1,10 +1,10 @@
-<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
-<%@page import="com.examen.portlet.PortletReceptorC" %>
+<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet"%>
+<%@page import="com.examen.portlet.PortletReceptorC"%>
 <%@page import="com.examen.entidades.Persona"%>
 <portlet:defineObjects />
 
 <%
-	Persona persona =(Persona)request.getAttribute(PortletReceptorC.ATTR_PERSONA);
+	Persona persona = (Persona) request.getAttribute(PortletReceptorC.ATTR_PERSONA);
 %>
 
 <div>
@@ -18,9 +18,12 @@
 <div><%=persona.getDireccion()%></div>
 <div><%=persona.getNumeroTelefono()%></div>
 <%
-	}
+	} else {
 %>
 
 <div>
 	<h2>No has introducido ningún dato</h2>
 </div>
+<%
+	}
+%>
