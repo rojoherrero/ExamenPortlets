@@ -14,9 +14,9 @@
 <%
 	if (persona != null) {
 %>
-<div><%=persona.getNombre()%></div>
-<div><%=persona.getDireccion()%></div>
-<div><%=persona.getNumeroTelefono()%></div>
+<div>Nombre: <%=persona.getNombre()%></div>
+<div>Dirección: <%=persona.getDireccion()%></div>
+<div>Número de teléfono: <%=persona.getNumeroTelefono()%></div>
 <%
 	} else {
 %>
